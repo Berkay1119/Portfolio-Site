@@ -17,17 +17,7 @@
 </head>
 
 <body>
-  <style>
-    body{
-      font-family: 'Montserrat Alternates', sans-serif !important;
-      font-weight: 400;
-    }
-    .display-4{
-      font-weight: bold;
-    }
-  </style>
-  
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #ffffff;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Berkay Karakaya</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -40,22 +30,31 @@
                     <a class="nav-link active" aria-current="page" href="#aboutMe">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#publishedProjects" onclick="closeNavbar()">Published Projects</a>
+                    <a class="nav-link active" href="#publishedProjects">Published Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#jamProjects" onclick="closeNavbar()">Jam Projects</a>
+                    <a class="nav-link active" href="#jamProjects">Jam Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#personalProjects" onclick="closeNavbar()">Personal Projects</a>
+                    <a class="nav-link active" href="#personalProjects">Personal Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#contact" onclick="closeNavbar()">Contact</a>
+                    <a class="nav-link active" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
-</nav>
+  </nav>
 
+  <style>
+    body{
+      font-family: 'Montserrat Alternates', sans-serif !important;
+      font-weight: 400;
+    }
+    .display-4{
+      font-weight: bold;
+    }
+  </style>
 
   <div class="container mt-5">
     <section id="aboutMe">
@@ -85,9 +84,10 @@
       </div>
     </section>
   </div>
-
-  <hr class="border border-black border-1 opacity-100">
   <div class="container mt-5" id="publishedProjects">
+    <hr class="border border-black border-1 opacity-0">
+    <hr class="border border-black border-1 opacity-0">
+    <hr class="border border-black border-1 opacity-100">
     <h1 class="display-4">Published Projects</h1> <!-- Bigger title -->
 
     
@@ -121,7 +121,7 @@
 
         <div class="row">
           <div class="col-md-12">
-              <h3 class="text-center">About The Game</h3>
+              <h3 class="text-center fw-bold">About The Game</h3>
               <p class="lead">Match Colordom! is a puzzle game for mobile users. 
                 The goal of the player is to clear the area using the tiles deck. 
                 When player matches the color, the matched tile comes to the hand of the player.</p>
@@ -129,7 +129,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-              <h3 class="text-center">My Contributions</h3>
+              <h3 class="text-center fw-bold">My Contributions</h3>
               <p class="lead">I was the only developer on this project. I planned and implemented the software in the direction of game design that is made beforehand. 
                 The closed and open tiles are determined at the inital phase of each level. This initilization procedure makes the game more designer friendly. 
               </p>
@@ -171,7 +171,7 @@
 
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">About The Game</h3>
+            <h3 class="text-center fw-bold">About The Game</h3>
             <p class="lead">Split 3D! is a puzzle game for mobile users. 
               The goal of the player is to clear the area by drawing a line that consists of one color and all of that color. 
               When there is one color in the area, the level is completed.</p>
@@ -179,7 +179,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">My Contributions</h3>
+            <h3 class="text-center fw-bold">My Contributions</h3>
             <p class="lead">I did all the programming for this game except input handling. Smooth input handling was a tough problem and I consulted my supervisor for that one. We implemented it together.</p>
 
             <p class="lead">I used a algorithm that was insipered by GO, an ancient board game, in order to determine whether the line is correct or not.</p> 
@@ -221,7 +221,7 @@
 
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">About The Game</h3>
+            <h3 class="text-center fw-bold">About The Game</h3>
             <p class="lead">Slider & Deliver is a puzzle game for mobile users. 
               The goal of the player is to create paths for delivering the cargo, by sliding the islands. 
               When all houses are got their cargo, the level is completed.</p>
@@ -229,7 +229,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">My Contributions</h3>
+            <h3 class="text-center fw-bold">My Contributions</h3>
             <p class="lead">I did all the programming for this game. </p>
 
             <p class="lead">I used Breath First Search Algorithm and it was reusable. Thanks to this situation, the same script could be easily applied if other games needed pathfinding.</p> 
@@ -269,7 +269,7 @@
 
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">About The Game</h3>
+            <h3 class="text-center fw-bold">About The Game</h3>
             <p class="lead">Parking Space! is a puzzle game with time constraints. 
               The player should move the vehicle to an empty space otherwise BOOM!. 
               Vehicles remains there until their waiting time is completed, and then goes. 
@@ -278,7 +278,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">My Contributions</h3>
+            <h3 class="text-center fw-bold">My Contributions</h3>
             <p class="lead">I did all the programming for this game. </p>
             <p class="lead">I applied vertex displacement for the first time. Result of vectex displacement leads us to smooth and beautiful feedback. </p> 
         </div>
@@ -315,7 +315,7 @@
 
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">About The Game</h3>
+            <h3 class="text-center fw-bold">About The Game</h3>
             <p class="lead">Unwind! is a puzzle game for mobile devices. 
               The player moves the ball of wool to the finish line. 
               However, there are several special tiles to utilize or overcome. </p>
@@ -323,7 +323,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">My Contributions</h3>
+            <h3 class="text-center fw-bold">My Contributions</h3>
             <p class="lead">I did all the programming for this game. </p>
             <p class="lead">I used the ObiRope tool for the first time. It was difficult to get exact outcome from the tool; however, it was fun to take that challenge and create a game out of it. </p> 
             <p class="lead"></p> created map creating tool for this game, other games also used that tool to map creation and design process. </p>
@@ -361,14 +361,14 @@
 
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">About The Game</h3>
+            <h3 class="text-center fw-bold">About The Game</h3>
             <p class="lead">Hexoria is not a published project; however, I gained remarkable experience and learnings from it. </p>
             <p class="lead">Hexoria is a rogue-like, deck building game. The player is a cult student that faces series of challenges to became a master.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">My Contributions</h3>
+            <h3 class="text-center fw-bold">My Contributions</h3>
             <p class="lead">I build an infrastructure for designers and other developers. The system and every other component have been tested by unit tests.</p>
             <p class="lead">I also had a chance to get some game design experience from it. I utilized my board game passion and knowledge for this game's design.  It was very fun to work on such a project.</p> 
         </div>
@@ -405,14 +405,14 @@
 
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">About The Game</h3>
+            <h3 class="text-center fw-bold">About The Game</h3>
             <p class="lead">Lemonade Party is an arcade-idle game. The player is owner of a lemonade store. 
               Players are collecting fruits, taking juice out of them, selling them and recruiting more workers for businesses to grow.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">My Contributions</h3>
+            <h3 class="text-center fw-bold">My Contributions</h3>
             <p class="lead">Lemonade Party! is the first professional game that I involved as game developer. It was great start for exciting journey.</p>
             <p class="lead">I worked with my supervisor in this project. I programmed mainly the store part of the game. In addition to that, I worked with my supervisor for the exploration part of the game. </p> 
             <p class="lead">Finally, we have updated the game to add more levels, contents. This created a problem for the money. 
@@ -422,8 +422,10 @@
     </section>
 </div>
   
-  <hr class="border border-black border-1 opacity-100">
   <div class="container mt-5" id="jamProjects">
+    <hr class="border border-black border-1 opacity-0">
+    <hr class="border border-black border-1 opacity-0">
+    <hr class="border border-black border-1 opacity-100">
     <h1 class="display-4">Jam Projects</h1> <!-- Bigger title -->
     <section id="jamProject">
       <h1>
@@ -449,7 +451,7 @@
 
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">About The Game</h3>
+            <h3 class="text-center fw-bold">About The Game</h3>
             <p class="lead">Kat vs Kat is a multiplayer action-strategy game. Each team consists of four players. Each player will take a button that is connected to an Arduino board. 
               Each member of the team takes one direction to move and one special ability slot. In the sake of hardware lackness, we implemented second team via keyboard. 
               Teams are trying to collect coins while preventing other team. There is a time limit, when it finishes the team that has most coin wins.</p>
@@ -458,7 +460,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">My Contributions</h3>
+            <h3 class="text-center fw-bold">My Contributions</h3>
             <p class="lead">Arif and I participated as game developers. Alara and Aslı did the art pieces and made design decisions. </p>
             <p class="lead">We did not work with Ardunip board before this jam. I tried to figure it out firstly to create seperate input handling. After solving that issue, we planned the software system and implemented it. </p> 
             <p class="lead">The time limit was almost 30 hours for this game. We did our best, and we are happy about the outcome of it. </p> 
@@ -490,13 +492,13 @@
 
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">About The Game</h3>
+            <h3 class="text-center fw-bold">About The Game</h3>
             <p class="lead">Terraform for Sirius is a city-builder game. Resource management is a main mechanic of the game. Player should grow the city by utilizing the light of the Sirius.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">My Contributions</h3>
+            <h3 class="text-center fw-bold">My Contributions</h3>
             <p class="lead">I did the main part of the programming with the help of Bahadır. Aslı did the art pieces of the game.</p>
             <p class="lead">I implemented a hexagonal map and build systems of the structures. 
               The merge mechanic for the structures should have been much more useful. 
@@ -506,13 +508,19 @@
     </section>
 
   </div>
-  <hr class="border border-black border-1 opacity-100">
+  
   <div class="container mt-5" id="personalProjects">
+    <hr class="border border-black border-1 opacity-0">
+    <hr class="border border-black border-1 opacity-0">
+    <hr class="border border-black border-1 opacity-100">
     <h1 class="display-4">Personal Projects</h1> <!-- Bigger title -->
     <h2>IN PROGRESS...</h2>
   </div>
-  <hr class="border border-black border-1 opacity-100">
+  
   <div class="container mt-5" id="contact">
+    <hr class="border border-black border-1 opacity-0">
+    <hr class="border border-black border-1 opacity-0">
+    <hr class="border border-black border-1 opacity-100">
     <h1 class="display-4">Contact</h1> <!-- Bigger title -->
     <h3>Feel free to send me a message here:  berkay11karakaya@gmail.com</h3>
   </div>
