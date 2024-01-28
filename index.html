@@ -1,307 +1,522 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<!doctype html>
+<html lang="en">
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat Alternates:wght@400;700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="desktop-1">
-      <header class="frame-a">
-        <div class="frame-a-child"></div>
-        <button class="rectangle-parent" id="groupButton">
-          <div class="frame-child"></div>
-          <div class="about-me">ABOUT ME</div>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+  <title>Bootstrap Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+  <style>
+    body{
+      font-family: 'Montserrat Alternates', sans-serif !important;
+      font-weight: 400;
+    }
+    .display-4{
+      font-weight: bold;
+    }
+  </style>
+  
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Berkay Karakaya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="frame-a-inner" id="groupContainer">
-          <div class="rectangle-parent">
-            <div class="frame-item"></div>
-            <div class="published-projects">PUBLISHED PROJECTS</div>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#aboutMe">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#publishedProjects" onclick="closeNavbar()">Published Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#jamProjects" onclick="closeNavbar()">Jam Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#personalProjects" onclick="closeNavbar()">Personal Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#contact" onclick="closeNavbar()">Contact</a>
+                </li>
+            </ul>
         </div>
-        <button class="rectangle-parent" id="groupButton1">
-          <div class="frame-inner"></div>
-          <div class="jam-projects">JAM PROJECTS</div>
-        </button>
-        <button class="rectangle-parent" id="groupButton2">
-          <div class="rectangle-div"></div>
-          <div class="personal-projects">PERSONAL PROJECTS</div>
-        </button>
-        <button class="rectangle-parent" id="groupButton3">
-          <div class="frame-child1"></div>
-          <div class="contact">CONTACT</div>
-        </button>
-        <img
-          class="github-png-1-icon"
-          loading="eager"
-          alt=""
-          src="./public/github-png-1@2x.png"
-          id="githubPng1Image"
-        />
+    </div>
+</nav>
 
-        <img
-          class="linkedin-1-icon"
-          loading="eager"
-          alt=""
-          src="./public/linkedin-1@2x.png"
-          id="linkedIn1Image"
-        />
-      </header>
-      <div class="about-me-container">
-        <div class="frame-title">
-          <div class="portfolio-rectangle">
-            <div class="about-me1" data-scroll-to="aboutMeContainer">
-              <div class="company-two-page-games-text">
-                <button class="title">
-                  <div class="about-me2">ABOUT ME</div>
-                </button>
-                <div class="game-title-display">
-                  <div class="greetings-im-berkay-container">
-                    <p class="greetings-im-berkay">
-                      Greetings! I'm Berkay, a passionate game developer and
-                      enthusiast with a love for all kinds of games. Beyond
-                      video gaming, I immerse myself in tabletop games,
-                      particularly roleplaying games like D&D and Pathfinder,
-                      among others. Board games are also a significant part of
-                      my gaming repertoire.
-                    </p>
-                    <p class="blank-line">&nbsp;</p>
-                    <p class="my-primary-goal">
-                      My primary goal is to craft enjoyable experiences for
-                      players. Throughout my journey, I've actively contributed
-                      to various teams, predominantly in the role of a game
-                      developer. My focus lies in creating robust systems and
-                      implementing them in a clear and maintainable manner.
-                      Let's bring great gaming experiences to life!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <img
-                class="portfolio-me-1"
-                loading="eager"
-                alt=""
-                src="./public/portfolio-me-1@2x.png"
-              />
-            </div>
-            <div
-              class="published-projects1"
-              data-scroll-to="publishedProjectsContainer"
-            >
-              <button class="title1">
-                <div class="title-child"></div>
-                <div class="published-projects2">PUBLISHED PROJECTS</div>
-              </button>
-              <div class="frame-parent">
-                <div class="frame-group">
-                  <div class="frame-container">
-                    <div class="game-title-parent">
-                      <button class="game-title">
-                        <div class="game-title-child"></div>
-                        <div class="lemonade-party">Lemonade Party</div>
-                      </button>
-                      <img
-                        class="image-1-icon"
-                        loading="eager"
-                        alt=""
-                        src="./public/image-1@2x.png"
-                        id="image1Icon"
-                      />
-                    </div>
-                    <div class="lemonade-1-parent">
-                      <img
-                        class="lemonade-1-icon"
-                        loading="eager"
-                        alt=""
-                        src="./public/lemonade-1@2x.png"
-                      />
 
-                      <img
-                        class="lemonade-2-icon"
-                        loading="eager"
-                        alt=""
-                        src="./public/lemonade-2@2x.png"
-                      />
-
-                      <img
-                        class="lemonade-3-icon"
-                        loading="eager"
-                        alt=""
-                        src="./public/lemonade-3@2x.png"
-                      />
-                    </div>
-                  </div>
-                  <b class="company-two-page">Company: Two Page Games</b>
-                </div>
-                <div class="my-contributions-parent">
-                  <b class="my-contributions">My Contributions</b>
-                  <div class="my-debut-project">
-                    My debut project at Two Page Games, I collaborated with
-                    colleagues to bring this game to life.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="jam-projects1" data-scroll-to="jamProjectsContainer">
-              <div class="title-parent">
-                <button class="title2">
-                  <div class="title-item"></div>
-                  <div class="jam-projects2">JAM PROJECTS</div>
-                </button>
-                <div class="katvs-kat-game-title">
-                  <div class="game-title-group">
-                    <button class="game-title1">
-                      <div class="game-title-item"></div>
-                      <div class="kat-vs-kat">KAT vs KAT</div>
-                    </button>
-                    <img
-                      class="github-png-2-icon"
-                      loading="eager"
-                      alt=""
-                      src="./public/github-png-2@2x.png"
-                      id="githubPng2Icon"
-                    />
-                  </div>
-                  <img
-                    class="image-6-1"
-                    loading="eager"
-                    alt=""
-                    src="./public/image-6-1@2x.png"
-                  />
-                </div>
-              </div>
-              <div class="contributors-parent">
-                <b class="contributors">Contributors:</b>
-                <div class="my-contributions-group">
-                  <b class="my-contributions1">My Contributions</b>
-                  <div class="i-was-participated">
-                    I was participated as game developer.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="personal-projects1"
-            data-scroll-to="personalProjectsContainer"
-          >
-            <button class="title3">
-              <div class="title-inner"></div>
-              <div class="personal-projects2">PERSONAL PROJECTS</div>
-            </button>
-            <button class="game-title2">
-              <div class="game-title-inner"></div>
-              <div class="in-progress">IN PROGRESS...</div>
-            </button>
-          </div>
+  <div class="container mt-5">
+    <section id="aboutMe">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="display-4">About Me</h1>
+          <p class="lead">
+            Greetings! I'm Berkay, a passionate
+            <span class="text-primary">game developer</span> and enthusiast
+            with a love for all kinds of games. Beyond video gaming, I immerse
+            myself in tabletop games, particularly roleplaying games like D&D
+            and Pathfinder, among others. Board games are also a significant
+            part of my gaming repertoire.
+          </p>
+          <p class="lead">
+            My primary goal is to craft enjoyable experiences for players.
+            Throughout my journey, I have actively contributed to various
+            teams, predominantly in the role of a game developer. My focus
+            lies in creating robust systems and implementing them in a clear
+            and maintainable manner. Let's bring great gaming experiences to
+            life!
+          </p>
         </div>
-        <div class="contact1" data-scroll-to="contactContainer">
-          <div class="contact-info-frame">
-            <button class="title4">
-              <div class="title-child1"></div>
-              <div class="contact2">CONTACT</div>
-            </button>
-            <div class="feel-free-to">Feel free to send me a message here:</div>
-          </div>
-          <div class="berkay11karakayagmailcom">berkay11karakaya@gmail.com</div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+          <img class="img-fluid rounded-circle" src="img/portfolio-me-1.png" />
         </div>
       </div>
-    </div>
+    </section>
+  </div>
 
-    <script>
-      var groupButton = document.getElementById("groupButton");
-      if (groupButton) {
-        groupButton.addEventListener("click", function () {
-          var anchor = document.querySelector("[data-scroll-to='aboutMeContainer']");
-          if (anchor) {
-            anchor.scrollIntoView({ block: "center", behavior: "smooth" });
-          }
-        });
-      }
-      
-      var groupContainer = document.getElementById("groupContainer");
-      if (groupContainer) {
-        groupContainer.addEventListener("click", function () {
-          var anchor = document.querySelector(
-            "[data-scroll-to='publishedProjectsContainer']"
-          );
-          if (anchor) {
-            anchor.scrollIntoView({ block: "center", behavior: "smooth" });
-          }
-        });
-      }
-      
-      var groupButton1 = document.getElementById("groupButton1");
-      if (groupButton1) {
-        groupButton1.addEventListener("click", function () {
-          var anchor = document.querySelector(
-            "[data-scroll-to='jamProjectsContainer']"
-          );
-          if (anchor) {
-            anchor.scrollIntoView({ block: "center", behavior: "smooth" });
-          }
-        });
-      }
-      
-      var groupButton2 = document.getElementById("groupButton2");
-      if (groupButton2) {
-        groupButton2.addEventListener("click", function () {
-          var anchor = document.querySelector(
-            "[data-scroll-to='personalProjectsContainer']"
-          );
-          if (anchor) {
-            anchor.scrollIntoView({ block: "center", behavior: "smooth" });
-          }
-        });
-      }
-      
-      var groupButton3 = document.getElementById("groupButton3");
-      if (groupButton3) {
-        groupButton3.addEventListener("click", function () {
-          var anchor = document.querySelector("[data-scroll-to='contactContainer']");
-          if (anchor) {
-            anchor.scrollIntoView({ block: "center", behavior: "smooth" });
-          }
-        });
-      }
-      
-      var githubPng1Image = document.getElementById("githubPng1Image");
-      if (githubPng1Image) {
-        githubPng1Image.addEventListener("click", function () {
-          window.open("https://github.com/Berkay1119");
-        });
-      }
-      
-      var linkedIn1Image = document.getElementById("linkedIn1Image");
-      if (linkedIn1Image) {
-        linkedIn1Image.addEventListener("click", function () {
-          window.open("https://www.linkedin.com/in/berkay-karakaya/");
-        });
-      }
-      
-      var image1Icon = document.getElementById("image1Icon");
-      if (image1Icon) {
-        image1Icon.addEventListener("click", function () {
-          window.open("https://apps.apple.com/tr/app/lemonade-party/id6446163957");
-        });
-      }
-      
-      var githubPng2Icon = document.getElementById("githubPng2Icon");
-      if (githubPng2Icon) {
-        githubPng2Icon.addEventListener("click", function () {
-          window.open("https://github.com/Berkay1119/2023InfiniaKargaJam");
-        });
-      }
-      </script>
-  </body>
+  <hr class="border border-black border-1 opacity-100">
+  <div class="container mt-5" id="publishedProjects">
+    <h1 class="display-4">Published Projects</h1> <!-- Bigger title -->
+
+    
+    <section id="publishedProject">
+        <h1>
+          Match ColorDom!
+          <a href="https://apps.apple.com/tr/app/match-colordom/id6473776355?l=tr">
+            <img src="img/app-store.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+          </a>
+        </h1>
+
+        <!-- Images Row -->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/ss1-1.png" alt="Image 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="img/ss-2.png" alt="Image 2" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="img/ss-3.png" alt="Image 3" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Text Blocks -->
+        <div class="row">
+          <div class="col-md-4">
+              <h4>Company: RoofTop Games</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+              <h3 class="text-center">About The Game</h3>
+              <p class="lead">Match Colordom! is a puzzle game for mobile users. 
+                The goal of the player is to clear the area using the tiles deck. 
+                When player matches the color, the matched tile comes to the hand of the player.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <h3 class="text-center">My Contributions</h3>
+              <p class="lead">I was the only developer on this project. I planned and implemented the software in the direction of game design that is made beforehand. 
+                The closed and open tiles are determined at the inital phase of each level. This initilization procedure makes the game more designer friendly. 
+              </p>
+              <p class="lead">
+                I did also level design tools to randomize and control the colors of the tiles. This made the design process more efficient.
+                Additionaly, I also created a program that makes random decks according to the content of the level.
+              </p>
+          </div>
+        </div>
+    </section>
+    <hr>
+    <section id="publishedProject">
+      <h1>
+        Split 3D!
+        <a href="https://apps.apple.com/tr/app/split-3d/id6452014012">
+          <img src="img/app-store.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+        </a>
+      </h1>
+
+      <!-- Images Row -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="img/ss2-1.png" alt="Image 1" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss1-2.png" alt="Image 2" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss3-3.png" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Text Blocks -->
+      <div class="row">
+        <div class="col-md-4">
+            <h4>Company: Two Page Games</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">About The Game</h3>
+            <p class="lead">Split 3D! is a puzzle game for mobile users. 
+              The goal of the player is to clear the area by drawing a line that consists of one color and all of that color. 
+              When there is one color in the area, the level is completed.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">My Contributions</h3>
+            <p class="lead">I did all the programming for this game except input handling. Smooth input handling was a tough problem and I consulted my supervisor for that one. We implemented it together.</p>
+
+            <p class="lead">I used a algorithm that was insipered by GO, an ancient board game, in order to determine whether the line is correct or not.</p> 
+            
+            <p class="lead">I used DreamTeck Spline tool for the first time in this game. Learning, adjusting and implementing this tool was fun.</p>
+            
+            <p class="lead">Designer of the game used a tool developed by me to use in such tile based games. The first game that I created the  tool for was Unwind. </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="publishedProject">
+      <h1>
+        Slide & Deliver
+        <a href="https://apps.apple.com/tr/app/slide-deliver/id6451048322">
+          <img src="img/app-store.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+        </a>
+      </h1>
+
+      <!-- Images Row -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="img/ss2-2.png" alt="Image 1" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss1-3.png" alt="Image 2" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss3-2.png" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Text Blocks -->
+      <div class="row">
+        <div class="col-md-4">
+            <h4>Company: Two Page Games</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">About The Game</h3>
+            <p class="lead">Slider & Deliver is a puzzle game for mobile users. 
+              The goal of the player is to create paths for delivering the cargo, by sliding the islands. 
+              When all houses are got their cargo, the level is completed.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">My Contributions</h3>
+            <p class="lead">I did all the programming for this game. </p>
+
+            <p class="lead">I used Breath First Search Algorithm and it was reusable. Thanks to this situation, the same script could be easily applied if other games needed pathfinding.</p> 
+            
+            <p class="lead">I also adjusted the tool, that I developed for tile-based games previously, for this game's needs.</p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="publishedProject">
+      <h1>
+        Parking Space!
+        <a href="https://apps.apple.com/tr/app/parking-space/id6450198131">
+          <img src="img/app-store.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+        </a>
+      </h1>
+
+      <!-- Images Row -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="img/ss2-3.png" alt="Image 1" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss1-4.png" alt="Image 2" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss3-3.png" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Text Blocks -->
+      <div class="row">
+        <div class="col-md-4">
+            <h4>Company: Two Page Games</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">About The Game</h3>
+            <p class="lead">Parking Space! is a puzzle game with time constraints. 
+              The player should move the vehicle to an empty space otherwise BOOM!. 
+              Vehicles remains there until their waiting time is completed, and then goes. 
+              When all vehicle were placed and went, level is completed.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">My Contributions</h3>
+            <p class="lead">I did all the programming for this game. </p>
+            <p class="lead">I applied vertex displacement for the first time. Result of vectex displacement leads us to smooth and beautiful feedback. </p> 
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="publishedProject">
+      <h1>
+        Unwind!
+        <a href="https://apps.apple.com/tr/app/unwind/id6449483203">
+          <img src="img/app-store.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+        </a>
+      </h1>
+
+      <!-- Images Row -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="img/ss1-5.png" alt="Image 1" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss2-4.png" alt="Image 2" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss3-4.png" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Text Blocks -->
+      <div class="row">
+        <div class="col-md-4">
+            <h4>Company: Two Page Games</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">About The Game</h3>
+            <p class="lead">Unwind! is a puzzle game for mobile devices. 
+              The player moves the ball of wool to the finish line. 
+              However, there are several special tiles to utilize or overcome. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">My Contributions</h3>
+            <p class="lead">I did all the programming for this game. </p>
+            <p class="lead">I used the ObiRope tool for the first time. It was difficult to get exact outcome from the tool; however, it was fun to take that challenge and create a game out of it. </p> 
+            <p class="lead"></p> created map creating tool for this game, other games also used that tool to map creation and design process. </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="publishedProject">
+      <h1>
+        Hexoria
+        <a href="https://store.steampowered.com/app/2345030/Hexoria/">
+          <img src="img/app-store-5.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+        </a>
+      </h1>
+
+      <!-- Images Row -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="img/ss2-5.png" alt="Image 1" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss1-6.png" alt="Image 2" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/ss3-5.png" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Text Blocks -->
+      <div class="row">
+        <div class="col-md-4">
+            <h4>Company: Two Page Games</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">About The Game</h3>
+            <p class="lead">Hexoria is not a published project; however, I gained remarkable experience and learnings from it. </p>
+            <p class="lead">Hexoria is a rogue-like, deck building game. The player is a cult student that faces series of challenges to became a master.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">My Contributions</h3>
+            <p class="lead">I build an infrastructure for designers and other developers. The system and every other component have been tested by unit tests.</p>
+            <p class="lead">I also had a chance to get some game design experience from it. I utilized my board game passion and knowledge for this game's design.  It was very fun to work on such a project.</p> 
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="publishedProject">
+      <h1>
+        Lemonade Party
+        <a href="https://apps.apple.com/tr/app/lemonade-party/id6446163957">
+          <img src="img/app-store.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+        </a>
+      </h1>
+
+      <!-- Images Row -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="img/lemonade-1.png" alt="Image 1" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/lemonade-2.png" alt="Image 2" class="img-fluid">
+          </div>
+          <div class="col-md-4">
+              <img src="img/lemonade-3.png" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Text Blocks -->
+      <div class="row">
+        <div class="col-md-4">
+            <h4>Company: Two Page Games</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">About The Game</h3>
+            <p class="lead">Lemonade Party is an arcade-idle game. The player is owner of a lemonade store. 
+              Players are collecting fruits, taking juice out of them, selling them and recruiting more workers for businesses to grow.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">My Contributions</h3>
+            <p class="lead">Lemonade Party! is the first professional game that I involved as game developer. It was great start for exciting journey.</p>
+            <p class="lead">I worked with my supervisor in this project. I programmed mainly the store part of the game. In addition to that, I worked with my supervisor for the exploration part of the game. </p> 
+            <p class="lead">Finally, we have updated the game to add more levels, contents. This created a problem for the money. 
+              It exceeded integer boundary; therefore, I implemented a system to hold the money data as a exponential and coefficient. </p> 
+        </div>
+      </div>
+    </section>
+</div>
+  
+  <hr class="border border-black border-1 opacity-100">
+  <div class="container mt-5" id="jamProjects">
+    <h1 class="display-4">Jam Projects</h1> <!-- Bigger title -->
+    <section id="jamProject">
+      <h1>
+        KAT vs KAT 
+        <a href="https://github.com/Berkay1119/2023InfiniaKargaJam">
+          <img src="img/github-game-1.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+        </a>
+      </h1>
+
+      <!-- Images Row -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="img/image-6-1.png" alt="Image 1" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Text Blocks -->
+      <div class="row">
+        <div class="col-md-12">
+            <h4>Contributors: Ahmet Arif Acıduman, Alara Çiloğlu, Aslı Gençtürk, Berkay Karakaya</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">About The Game</h3>
+            <p class="lead">Kat vs Kat is a multiplayer action-strategy game. Each team consists of four players. Each player will take a button that is connected to an Arduino board. 
+              Each member of the team takes one direction to move and one special ability slot. In the sake of hardware lackness, we implemented second team via keyboard. 
+              Teams are trying to collect coins while preventing other team. There is a time limit, when it finishes the team that has most coin wins.</p>
+            <p class="lead">At the end of the jam, Kat vs Kat was declared as the winner of the jam. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">My Contributions</h3>
+            <p class="lead">Arif and I participated as game developers. Alara and Aslı did the art pieces and made design decisions. </p>
+            <p class="lead">We did not work with Ardunip board before this jam. I tried to figure it out firstly to create seperate input handling. After solving that issue, we planned the software system and implemented it. </p> 
+            <p class="lead">The time limit was almost 30 hours for this game. We did our best, and we are happy about the outcome of it. </p> 
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="jamProject">
+      <h1>
+        Terraform for Sirius
+        <a href="https://github.com/Berkay1119/TerraformForSirius">
+          <img src="img/github-game-1.png" alt="Clickable Icon" class="img-fluid clickable-icon" style="width: 50px; height: 50px;">
+        </a>
+      </h1>
+
+      <!-- Images Row -->
+      <div class="row">
+          <div class="col-md-4">
+              <img src="img/ss-1.png" alt="Image 1" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Text Blocks -->
+      <div class="row">
+        <div class="col-md-12">
+            <h4>Contributors: Ahmet Bahadır Yücel, Aslı Gençtürk, Berkay Karakaya</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">About The Game</h3>
+            <p class="lead">Terraform for Sirius is a city-builder game. Resource management is a main mechanic of the game. Player should grow the city by utilizing the light of the Sirius.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">My Contributions</h3>
+            <p class="lead">I did the main part of the programming with the help of Bahadır. Aslı did the art pieces of the game.</p>
+            <p class="lead">I implemented a hexagonal map and build systems of the structures. 
+              The merge mechanic for the structures should have been much more useful. 
+              However, this game was not finished in the given time, which is short for a jam. </p> 
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <hr class="border border-black border-1 opacity-100">
+  <div class="container mt-5" id="personalProjects">
+    <h1 class="display-4">Personal Projects</h1> <!-- Bigger title -->
+    <h2>IN PROGRESS...</h2>
+  </div>
+  <hr class="border border-black border-1 opacity-100">
+  <div class="container mt-5" id="contact">
+    <h1 class="display-4">Contact</h1> <!-- Bigger title -->
+    <h3>Feel free to send me a message here:  berkay11karakaya@gmail.com</h3>
+  </div>
+
+</body>
+
 </html>
